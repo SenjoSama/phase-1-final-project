@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         console.log("Please enter a search term.");
       }
+      form1.reset();
   })
   });
 
