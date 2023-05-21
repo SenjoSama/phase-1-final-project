@@ -5,7 +5,7 @@
 This is my phase 1 final project as a student at Flatiron School learning software development! 
 ## Installation
 
-Please pull the index.html file and then choose your preferred browser!
+Please fork and pull the index.html file and then choose your preferred browser!
 
 
 ## Usage
