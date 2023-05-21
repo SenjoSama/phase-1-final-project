@@ -35,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   main_types = Object.keys(colors);
-  
-  
+
   function createPokemonCard(pokemon) {
     const poke_container = document.getElementById("poke_container");
     const pokemonEl = document.createElement("div");
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // const color = colors[pokemon.type]; <= this doesn't work because there is no single value for 'pokemon.type'
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1); 
       
-    // pokemonEl.style.backgroundColor = color;
+    pokemonEl.style.backgroundColor = colors;
     
     pokemonEl.innerHTML = `
         <div class="img-container">
@@ -58,11 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <small class="type">Type: <span>${pokemon.type}</span></small>
         </div>
     `;
-    // const poke_types = pokemon.types.map(el => el.type.name);
-    // const type = main_types.find(
-    //   type => poke_types.indexOf(type) > -1
-    // );
-      
     poke_container.appendChild(pokemonEl);
   }
 });
